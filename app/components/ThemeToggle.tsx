@@ -1,9 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-import { FaSun, FaMoon} from 'react-icons/fa'
-import { IoSunny, IoSunnyOutline  } from "react-icons/io5";
-import { MdSunny } from "react-icons/md";
+import { FaMoon} from 'react-icons/fa'
 import { FiSun } from "react-icons/fi";
 
 export default function ThemeToggle() {

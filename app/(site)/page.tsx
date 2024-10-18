@@ -1,9 +1,6 @@
 import {getProjects} from '@/sanity/sanity-utils'
-import { Project } from '@/types/Project';
+
 import Image from 'next/image';
-import hero2 from '../public/assets/hero2.png'
-import hero3 from '../public/assets/hero.svg'
-// import hero3 from '../public/assets/htmlhero.png'
 import hero1 from '../../public/assets/hero1.svg'
 import { PortableText } from '@portabletext/react';
 import { Button } from "@/components/ui/button"
@@ -14,7 +11,7 @@ import Link from 'next/link';
 export default async function Home() {
 
   const projects = await getProjects()
-  console.log('Projects:', projects)
+  // console.log('Projects:', projects)
 
   return (
     <div className='flex flex-col items-center'>
