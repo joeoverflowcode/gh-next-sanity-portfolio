@@ -1,3 +1,23 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  basePath: "/gh-next-sanity-portfolio", // Base path for GitHub Pages deployment
+  images: {
+    unoptimized: true, // Required for GitHub Pages since it doesn’t support Next.js image optimization
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io', // Allow images from Sanity's CDN
+        port: '',
+      },
+    ],
+  },
+};
+
+export default nextConfig;
+
+
+
 // /** @type {import('next').NextConfig} */
 // const nextConfig = {
 
@@ -15,13 +35,13 @@
 // export default nextConfig;
 
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
-  basePath: "/nextjs-github-pages",
-  images: {
-    unoptimized: true,
-  },
-};
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   output: "export",
+//   basePath: "/gh-next-sanity-portfolio",
+//   images: {
+//     unoptimized: true,
+//   },
+// };
 
-export default nextConfig;
+// export default nextConfig;
